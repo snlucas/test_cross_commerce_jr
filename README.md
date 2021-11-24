@@ -2,9 +2,10 @@
 Teste para vaga de dev. Elixir Jr. na Cross Commerce.
 
 ## First Step: Extract Data
-- [] Get the whole data from the first page.
-- [] Get data from each page 'til empty list.
+- [x] Get the whole data from the first page.
+- [x] Get data from each page 'til empty list.
 
 ## Second Step: Transform
-- [] Implement a sort algorithm.
+- [x] Implement a sort algorithm.
+ - [] Improve with a quick sort dual pivot implementation.
 - [] Sort data.
