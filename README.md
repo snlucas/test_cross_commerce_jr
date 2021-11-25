@@ -30,3 +30,13 @@ $ pip install -r requirements.txt
 $ python manage.py runserver
 ```
 The API is being served at 127.0.0.1:8000/api
+
+### Run Tests
+**Django**
+```shell
+$ python manage.py test
+```
+**Python utils dir**
+```shell
+$ python -m unittest test_cross_commerce/utils/tests_quick_sort.py
+```
