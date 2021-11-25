@@ -8,4 +8,7 @@ Teste para vaga de dev. Elixir Jr. na Cross Commerce.
 ## Second Step: Transform
 - [x] Implement a sort algorithm.
  - [] Improve with a quick sort dual pivot implementation.
-- [] Sort data.
+- [x] Sort data.
+
+## Third Step: Load
+- [x] Expose a REST API with processed data.
