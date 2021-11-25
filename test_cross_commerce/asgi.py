@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_cross_commerce.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "test_cross_commerce.settings")
 
 application = get_asgi_application()
