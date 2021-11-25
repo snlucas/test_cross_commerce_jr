@@ -6,21 +6,19 @@ class APITests(SimpleTestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
 
-
     def test_api_status_code(self):
         """
         Test if API is ok
         """
-        response = self.client.get('/api/')
+        response = self.client.get("/api/")
         self.assertEqual(response.status_code, 200)
 
     def test_api_is_sorted(self):
         """
         Test if API data is sorted
         """
-        response = self.client.get('/api/')
+        response = self.client.get("/api/")
         self.assertTrue(self.is_sorted(response.data))
-
 
     def is_sorted(self, arr):
         """
