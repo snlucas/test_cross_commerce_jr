@@ -12,3 +12,19 @@ Teste para vaga de dev. Elixir Jr. na Cross Commerce.
 
 ## Third Step: Load
 - [x] Expose a REST API with processed data.
+
+## How to Run
+### Run Using Docker Compose
+```shell
+$ sudo docker-compose run web django-admin startproject test_cross_commerce .
+$ sudo chown -R $USER:$USER .
+$ docker-compose up
+```
+
+### Run Using Python
+**Obs.**, First you should use a *Virtual Environment*.
+```shell
+$ pip install -r requirements.txt
+$ python manage.py runserver
+```
+The API is being served at 127.0.0.1:8000/api
