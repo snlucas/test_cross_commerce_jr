@@ -1,6 +1,8 @@
 from django.test import SimpleTestCase
 from rest_framework.test import APIRequestFactory
 
+from test_cross_commerce.utils.is_sorted_check import is_sorted
+
 
 class APITests(SimpleTestCase):
     def setUp(self):
@@ -18,13 +20,4 @@ class APITests(SimpleTestCase):
         Test if API data is sorted
         """
         response = self.client.get("/api/")
-        self.assertTrue(self.is_sorted(response.data))
-
-    def is_sorted(self, arr):
-        """
-        Check if each comparison returns 1 (True)
-        If any comparison is 0 (False), it should not pass.
-        """
-        if all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1)):
-            return True
-        return False
+        self.assertTrue(is_sorted(response.data))
